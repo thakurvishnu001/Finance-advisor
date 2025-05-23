@@ -1,0 +1,2 @@
+# Finance-advisor
+Finance Advisor is a smart financial tool using React, Vite, CSS, HTML, and AI to analyze dummy data for budgeting and expense tracking. It offers AI-driven insights, a responsive UI, and optimized performance for seamless financial management. 
