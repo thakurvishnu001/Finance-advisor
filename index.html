@@ -1,13 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web3 Finance Tracker with AI Insights</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Finance Advisor - Your Financial Future Starts Here</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>AI Finance Advisor</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="schemes.html" class="nav-link">Schemes</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Your AI-Powered 
+                        <span class="gradient-text">Financial Advisor</span>
+                        for India
+                    </h1>
+                    <p class="hero-description">
+                        Discover personalized government and private schemes tailored to your income. 
+                        Get expert financial advice powered by AI to secure your financial future.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="openChatbot()">
+                            <i class="fas fa-robot"></i>
+                            Start AI Chat
+                        </button>
+                        <a href="schemes.html" class="btn btn-secondary">
+                            <i class="fas fa-search"></i>
+                            Browse Schemes
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Investment Planning</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Risk Management</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-piggy-bank"></i>
+                        <span>Savings Schemes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Easy steps to find and apply for Government & Private Schemes</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Enter Details</h3>
+                    <p>Start by entering your basic details and income information!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>AI Search</h3>
+                    <p>Our AI engine will find the most relevant schemes for you!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>Select & Apply</h3>
+                    <p>Select and get guidance on applying for the best suited schemes!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Schemes by Categories</h2>
+                <p>Explore schemes across different domains tailored for Indian citizens</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" onclick="window.location.href='schemes.html?category=agriculture'">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agriculture, Rural & Environment</h3>
+                    <span class="scheme-count">522 Schemes</span>
+                </div>
+                <div class="category-card" onclick="window.location.href='schemes.html?category=banking'">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Banking, Financial Services</h3>
+                    <span class="scheme-count">226 Schemes</span>
+                </div>
+                <div class="category-card" onclick="window.location.href='schemes.html?category=business'">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business & Entrepreneurship</h3>
+                    <span class="scheme-count">518 Schemes</span>
+                </div>
+                <div class="category-card" onclick="window.location.href='schemes.html?category=education'">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education & Learning</h3>
+                    <span class="scheme-count">886 Schemes</span>
+                </div>
+                <div class="category-card" onclick="window.location.href='schemes.html?category=health'">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Wellness</h3>
+                    <span class="scheme-count">216 Schemes</span>
+                </div>
+                <div class="category-card" onclick="window.location.href='schemes.html?category=housing'">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Housing & Shelter</h3>
+                    <span class="scheme-count">100 Schemes</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="categories.html" class="btn btn-outline">View All Categories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4000+</div>
+                    <div class="stat-label">Government Schemes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Private Schemes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">States & UTs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Central Ministries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Secure Your Financial Future?</h2>
+                <p>Get personalized scheme recommendations and expert financial advice powered by AI</p>
+                <button class="btn btn-primary" onclick="openChatbot()">
+                    <i class="fas fa-robot"></i>
+                    Start Your Financial Journey
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                AI Finance Advisor
+            </div>
+            <button class="chatbot-close" onclick="closeChatbot()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! I'm your AI Finance Advisor. I can help you find the best government and private schemes based on your income and needs. What's your monthly income range?
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>AI Finance Advisor</span>
+                    </div>
+                    <p>Your trusted partner for financial planning and government scheme discovery in India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="schemes.html">Schemes</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="states.html">States/UTs</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="advisor.html">Financial Planning</a></li>
+                        <li><a href="advisor.html">Investment Advice</a></li>
+                        <li><a href="advisor.html">Tax Planning</a></li>
+                        <li><a href="advisor.html">Retirement Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-7247075470</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@aifinanceadvisor.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Finance Advisor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
 </html>
