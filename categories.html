@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Categories - AI Finance Advisor</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>AI Finance Advisor</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="schemes.html" class="nav-link">Schemes</a>
+                <a href="categories.html" class="nav-link active">Categories</a>
+
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">></span>
+                <span>Categories</span>
+            </div>
+            <h1>Scheme Categories</h1>
+            <p>Find schemes based on different categories and domains</p>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card" onclick="window.location.href='schemes.html?category=agriculture'">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agriculture, Rural & Environment</h3>
+                    <p>Schemes for farmers, rural development, and environmental conservation</p>
+                    <span class="scheme-count">522 Schemes</span>
+                    <div class="category-examples">
+                        <span>PM-KISAN</span>
+                        <span>MGNREGA</span>
+                        <span>Soil Health Card</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=banking'">
+                    <div class="category-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Banking, Financial Services and Insurance</h3>
+                    <p>Financial inclusion, banking services, and insurance schemes</p>
+                    <span class="scheme-count">226 Schemes</span>
+                    <div class="category-examples">
+                        <span>Jan Dhan Yojana</span>
+                        <span>PMJJBY</span>
+                        <span>PMSBY</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=business'">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business & Entrepreneurship</h3>
+                    <p>Startup funding, business loans, and entrepreneurship support</p>
+                    <span class="scheme-count">518 Schemes</span>
+                    <div class="category-examples">
+                        <span>PM Mudra</span>
+                        <span>Startup India</span>
+                        <span>Stand Up India</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=education'">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education & Learning</h3>
+                    <p>Scholarships, educational loans, and skill development programs</p>
+                    <span class="scheme-count">886 Schemes</span>
+                    <div class="category-examples">
+                        <span>PM YASASVI</span>
+                        <span>NSP Scholarships</span>
+                        <span>Skill India</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=health'">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health & Wellness</h3>
+                    <p>Healthcare coverage, medical insurance, and wellness programs</p>
+                    <span class="scheme-count">216 Schemes</span>
+                    <div class="category-examples">
+                        <span>Ayushman Bharat</span>
+                        <span>PMJAY</span>
+                        <span>Health Insurance</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=housing'">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Housing & Shelter</h3>
+                    <p>Affordable housing, home loans, and shelter schemes</p>
+                    <span class="scheme-count">100 Schemes</span>
+                    <div class="category-examples">
+                        <span>PM Awas Yojana</span>
+                        <span>CLSS</span>
+                        <span>Housing for All</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=safety'">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Public Safety, Law & Justice</h3>
+                    <p>Legal aid, public safety, and justice delivery schemes</p>
+                    <span class="scheme-count">10 Schemes</span>
+                    <div class="category-examples">
+                        <span>Legal Aid</span>
+                        <span>Victim Compensation</span>
+                        <span>Fast Track Courts</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=technology'">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Science, IT & Communications</h3>
+                    <p>Digital India initiatives, IT services, and communication schemes</p>
+                    <span class="scheme-count">71 Schemes</span>
+                    <div class="category-examples">
+                        <span>Digital India</span>
+                        <span>Common Service Centers</span>
+                        <span>BharatNet</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=employment'">
+                    <div class="category-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Skills & Employment</h3>
+                    <p>Job creation, skill development, and employment generation</p>
+                    <span class="scheme-count">287 Schemes</span>
+                    <div class="category-examples">
+                        <span>MGNREGA</span>
+                        <span>PMKVY</span>
+                        <span>Deen Dayal Upadhyaya</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=social'">
+                    <div class="category-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Social Welfare & Empowerment</h3>
+                    <p>Social security, welfare programs, and empowerment schemes</p>
+                    <span class="scheme-count">1330 Schemes</span>
+                    <div class="category-examples">
+                        <span>APL/BPL Schemes</span>
+                        <span>Social Security</span>
+                        <span>Empowerment Programs</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=sports'">
+                    <div class="category-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Sports & Culture</h3>
+                    <p>Sports development, cultural preservation, and recreational activities</p>
+                    <span class="scheme-count">131 Schemes</span>
+                    <div class="category-examples">
+                        <span>Khelo India</span>
+                        <span>Cultural Heritage</span>
+                        <span>Sports Infrastructure</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=transport'">
+                    <div class="category-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Transport & Infrastructure</h3>
+                    <p>Transportation development, infrastructure projects, and connectivity</p>
+                    <span class="scheme-count">53 Schemes</span>
+                    <div class="category-examples">
+                        <span>Road Development</span>
+                        <span>Metro Projects</span>
+                        <span>Rural Connectivity</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=tourism'">
+                    <div class="category-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Travel & Tourism</h3>
+                    <p>Tourism promotion, travel facilitation, and hospitality development</p>
+                    <span class="scheme-count">38 Schemes</span>
+                    <div class="category-examples">
+                        <span>Incredible India</span>
+                        <span>Tourism Infrastructure</span>
+                        <span>Heritage Conservation</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=utility'">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Utility & Sanitation</h3>
+                    <p>Water supply, sanitation, waste management, and utility services</p>
+                    <span class="scheme-count">35 Schemes</span>
+                    <div class="category-examples">
+                        <span>Swachh Bharat</span>
+                        <span>Jal Jeevan Mission</span>
+                        <span>Clean Energy</span>
+                    </div>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='schemes.html?category=women'">
+                    <div class="category-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Women and Child</h3>
+                    <p>Women empowerment, child welfare, and family support schemes</p>
+                    <span class="scheme-count">383 Schemes</span>
+                    <div class="category-examples">
+                        <span>Sukanya Samriddhi</span>
+                        <span>Beti Bachao Beti Padhao</span>
+                        <span>Maternity Benefits</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Finding the Right Scheme?</h2>
+                <p>Our AI advisor can help you discover schemes based on your specific needs and eligibility</p>
+                <button class="btn btn-primary" onclick="openChatbot()">
+                    <i class="fas fa-robot"></i>
+                    Get AI Recommendations
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Toggle Button -->
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>AI Finance Advisor</span>
+                    </div>
+                    <p>Your trusted partner for financial planning and government scheme discovery in India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="schemes.html">Schemes</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="states.html">States/UTs</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-7247075470</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@aifinanceadvisor.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Finance Advisor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <style>
+        .categories-section {
+            padding: 60px 0;
+        }
+        
+        .category-examples {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .category-examples span {
+            background: rgba(255, 107, 53, 0.1);
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .breadcrumb {
+            margin-bottom: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .separator {
+            margin: 0 10px;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</body>
+</html>

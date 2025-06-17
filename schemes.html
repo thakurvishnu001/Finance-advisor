@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government & Private Schemes - AI Finance Advisor</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schemes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>AI Finance Advisor</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="schemes.html" class="nav-link active">Schemes</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">></span>
+                <span>Schemes</span>
+            </div>
+            <h1>Government & Private Schemes</h1>
+            <p>Discover the best financial schemes tailored for your needs</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search schemes by name, category, or keywords...">
+                </div>
+                <button class="search-btn" onclick="searchSchemes()">Search</button>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Schemes</button>
+                <button class="filter-tab" data-filter="government">Government</button>
+                <button class="filter-tab" data-filter="private">Private</button>
+                <button class="filter-tab" data-filter="popular">Popular</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schemes Grid -->
+    <section class="schemes-section">
+        <div class="container">
+            <div class="schemes-grid" id="schemes-grid">
+                <!-- Government Schemes -->
+                <div class="scheme-card" data-type="government" data-category="agriculture">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>PM-KISAN Scheme</h3>
+                    <p>Direct income support to farmer families - ₹6000 per year in three installments.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>All Farmers</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹6000/year</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('pm-kisan')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="health">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Ayushman Bharat PM-JAY</h3>
+                    <p>World's largest health insurance scheme providing coverage up to ₹5 lakh per family.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>40 Crore Indians</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹5 Lakh Cover</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('ayushman-bharat')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="education">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>PM YASASVI Scheme</h3>
+                    <p>Scholarship for OBC, EBC and DNT students for higher education with annual income criteria.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>OBC/EBC/DNT</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Up to ₹1.25L</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('pm-yasasvi')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="business">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>PM Mudra Yojana</h3>
+                    <p>Micro-finance scheme providing loans up to ₹10 lakh for small businesses.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Micro Enterprises</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Up to ₹10L</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('pm-mudra')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="housing">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>PM Awas Yojana</h3>
+                    <p>Housing for All mission providing affordable housing solutions for urban and rural areas.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>EWS/LIG/MIG</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Subsidy Available</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('pm-awas')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="women">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Sukanya Samriddhi Yojana</h3>
+                    <p>Small savings scheme for girl child with high interest rates and tax benefits.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Girl Child (0-10)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-percentage"></i>
+                            <span>8.2% Interest</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('sukanya-samriddhi')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="employment">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>MGNREGA</h3>
+                    <p>Employment guarantee scheme providing 100 days of wage employment to rural households.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Rural Households</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>100 Days/Year</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('mgnrega')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="government" data-category="pension">
+                    <div class="scheme-badge government">Government</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <h3>Atal Pension Yojana</h3>
+                    <p>Pension scheme for unorganized sector workers with guaranteed monthly pension.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>18-40 Years</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹1000-5000/month</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('atal-pension')">Learn More</button>
+                </div>
+
+                <!-- Private Schemes -->
+                <div class="scheme-card" data-type="private" data-category="investment">
+                    <div class="scheme-badge private">Private</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>SIP Mutual Funds</h3>
+                    <p>Systematic Investment Plan for long-term wealth creation with professional fund management.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Min ₹500/month</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-percentage"></i>
+                            <span>12-15% Returns</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('sip-mutual-funds')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="private" data-category="insurance">
+                    <div class="scheme-badge private">Private</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Term Insurance Plans</h3>
+                    <p>Pure life insurance with high coverage at affordable premiums for family protection.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹500+ Premium</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>Up to ₹5 Cr Cover</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('term-insurance')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="private" data-category="investment">
+                    <div class="scheme-badge private">Private</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Digital Gold</h3>
+                    <p>Invest in 24k pure gold digitally with no storage issues and instant liquidity.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Start from ₹1</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>24/7 Trading</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('digital-gold')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="private" data-category="investment">
+                    <div class="scheme-badge private">Private</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Real Estate Investment</h3>
+                    <p>Invest in commercial and residential properties through REITs and fractional ownership.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>Min ₹10,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-percentage"></i>
+                            <span>8-12% Returns</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('real-estate')">Learn More</button>
+                </div>
+
+                <div class="scheme-card" data-type="private" data-category="health">
+                    <div class="scheme-badge private">Private</div>
+                    <div class="scheme-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Health Insurance Plus</h3>
+                    <p>Comprehensive health insurance with OPD benefits, wellness programs, and cashless treatment.</p>
+                    <div class="scheme-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rupee-sign"></i>
+                            <span>₹3000+ Premium</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>₹25L+ Cover</span>
+                        </div>
+                    </div>
+                    <button class="scheme-btn" onclick="viewSchemeDetails('health-plus')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scheme Details Modal -->
+    <div class="modal" id="scheme-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Scheme Details</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>AI Finance Advisor</span>
+                    </div>
+                    <p>Your trusted partner for financial planning and government scheme discovery in India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="schemes.html">Schemes</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="states.html">States/UTs</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-7247075470</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@aifinanceadvisor.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Finance Advisor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/schemes.js"></script>
+</body>
+</html>
